@@ -8,7 +8,7 @@
     "gg sans", "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei",
     "Microsoft JhengHei", 宋体, SimSun, "Noto Sans", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 18px;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -53,6 +53,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   --interactive-normal: #5f606a;
+  --discord-border: oklab(0.678888 0.00325716 -0.011175 / 0.2);
 }
 
 @theme inline {
@@ -91,10 +92,14 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-discord-background: var(--discord-background);
+  --color-discord-border: var(--discord-border);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  /* --background: oklch(0.145 0 0); */
+  --background: oklch(0.1297 0.005 285.67);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -127,6 +132,8 @@
   --sidebar-ring: oklch(0.556 0 0);
 
   --interactive-normal: #9b9ca4;
+  --discord-background: oklab(0.155263 0.00116055 -0.00404651);
+  --discord-border: oklab(0.678888 0.00325716 -0.011175 / 0.160784);
 }
 
 @layer base {

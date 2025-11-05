@@ -45,3 +45,33 @@ export const HelpIcon: IconNode = [
     },
   ],
 ];
+
+// 闲置
+export const IdleIcon: IconNode = [
+  [
+    "rect",
+    {
+      x: "4.5",
+      y: "4.5",
+      rx: "15",
+      ry: "15",
+      width: "15",
+      height: "15",
+      fill: "#ca9654",
+      key: "5ceefd9d",
+    },
+  ],
+  [
+    "rect",
+    {
+      x: "2.5",
+      y: "2.5",
+      width: "11.5",
+      height: "11.5",
+      rx: "10",
+      ry: "10",
+      key: "bc1b7187",
+      className: "dark:fill-black fill-white",
+    },
+  ],
+];
