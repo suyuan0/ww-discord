@@ -54,7 +54,7 @@ export default function SidebarUser() {
 
   return (
     // <section className="dark:bg-discord-background border-discord-border absolute start-2 bottom-2 w-[calc(100%-var(--spacing)*4)] rounded-md border bg-[#FBFBFB]">
-    <section className="bg-discord-background border-discord-border absolute start-2 bottom-2 w-[calc(100%-var(--spacing)*4)] rounded-md border">
+    <section className="bg-discord-background border-discord-border absolute start-2 bottom-2 w-[calc(100%-var(--spacing)*4)] rounded-lg border">
       <div
         className={clsx(
           "-ms-px flex h-14 items-center space-x-2 overflow-hidden p-3",
@@ -101,7 +101,7 @@ export default function SidebarUser() {
           </div>
         </div>
         <ul className="flex flex-1 items-center space-x-2">
-          <li className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md bg-[rgba(210,45,57,0.12)]">
+          <li className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg bg-[rgba(210,45,57,0.12)]">
             <Tooltip>
               <TooltipTrigger>
                 <MicOffIcon stroke="#DA3E44" size={20} />
@@ -109,7 +109,7 @@ export default function SidebarUser() {
               <TooltipContent>取消静音</TooltipContent>
             </Tooltip>
           </li>
-          <li className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md hover:bg-[rgba(151,151,159,0.2)]">
+          <li className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg hover:bg-[rgba(151,151,159,0.2)]">
             <Tooltip>
               <TooltipTrigger>
                 <HeadphonesIcon size={20} />
@@ -117,7 +117,7 @@ export default function SidebarUser() {
               <TooltipContent>耳机静音</TooltipContent>
             </Tooltip>
           </li>
-          <li className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md hover:bg-[rgba(151,151,159,0.2)]">
+          <li className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg hover:bg-[rgba(151,151,159,0.2)]">
             <Tooltip>
               <TooltipTrigger>
                 <SettingsIcon size={20} />
