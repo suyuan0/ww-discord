@@ -57,12 +57,12 @@ export default function SidebarUser() {
     <section className="bg-discord-background border-discord-border absolute start-2 bottom-2 w-[calc(100%-var(--spacing)*4)] rounded-lg border">
       <div
         className={clsx(
-          "-ms-px flex h-14 items-center space-x-2 overflow-hidden p-3",
+          "-ms-px grid h-14 grid-cols-[1fr_auto] space-x-2 overflow-hidden p-3",
         )}
       >
         {/* avatar & name */}
         <div
-          className="-ms-1 flex cursor-pointer items-center space-x-2 rounded-sm px-1 py-[5px] duration-300 hover:bg-[rgba(151,151,159,0.2)]"
+          className="-ms-1 -mt-1.5 grid cursor-pointer grid-cols-[32px_auto] items-center gap-x-2 rounded-sm px-1 py-[5px] duration-300 hover:bg-[rgba(151,151,159,0.2)]"
           onMouseEnter={handleUserMouseEnter}
           onMouseLeave={handleUserMouseLeave}
         >
@@ -82,7 +82,7 @@ export default function SidebarUser() {
               className="absolute -right-0.75 -bottom-0.75 rounded-full bg-[#FBFBFB] dark:bg-black"
             />
           </div>
-          <div className="w-15">
+          <div className="overflow-hidden">
             <p className="truncate font-medium">Sakura</p>
             <div className="relative h-4 overflow-hidden text-xs text-[#9d9c9c]">
               <p
@@ -93,14 +93,14 @@ export default function SidebarUser() {
               </p>
               <p
                 ref={userIdNameRef}
-                className="truncate transition-[opacity,transform] duration-300"
+                className="truncate text-ellipsis transition-[opacity,transform] duration-300"
               >
                 wanwan013846
               </p>
             </div>
           </div>
         </div>
-        <ul className="flex flex-1 items-center space-x-2">
+        <ul className="-mt-1 grid grid-cols-3 items-center gap-x-2">
           <li className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg bg-[rgba(210,45,57,0.12)]">
             <Tooltip>
               <TooltipTrigger>

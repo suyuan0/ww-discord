@@ -1,13 +1,17 @@
+import { Outlet } from "react-router";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 
 export const Layout = () => {
   return (
-    <main className="flex h-screen flex-col">
+    <div className="flex h-screen flex-col">
       <Header />
-      <div className="flex-1">
-        <Sidebar />
+      <div className="flex flex-1">
+        <div className="h-full">
+          <Sidebar />
+        </div>
+        <Outlet />
       </div>
-    </main>
+    </div>
   );
 };

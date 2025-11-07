@@ -5,5 +5,11 @@ export default [
   {
     path: "/",
     Component: Layout,
+    children: [
+      {
+        path: "/@me",
+        element: <div>me</div>,
+      },
+    ],
   },
 ] satisfies RouteObject[];
