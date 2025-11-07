@@ -10,7 +10,12 @@ export default function Header() {
   return (
     <header className="relative flex h-8 items-center justify-center">
       <div className="flex items-center space-x-2">
-        <Icon iconNode={WaveIcon} stroke="none" size={16} />
+        <Icon
+          iconNode={WaveIcon}
+          stroke="none"
+          size={16}
+          className="fill-(--interactive-normal)"
+        />
         <span className="text-sm font-medium">好友</span>
       </div>
       <div className="absolute right-4.5 flex items-center space-x-6">

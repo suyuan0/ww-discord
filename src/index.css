@@ -99,6 +99,7 @@
   --color-discord-primary: var(--discord-primary);
   --color-discord-color-1: var(--discord-color-1);
   --color-discord-color-2: var(--discord-color-2);
+  --color-discord-color-3: var(--discord-color-3);
 }
 
 .dark {
@@ -141,6 +142,7 @@
   --discord-primary: #5965f2;
   --discord-color-1: rgba(151, 151, 159, 0.12);
   --discord-color-2: rgba(151, 151, 159, 0.24);
+  --discord-color-3: oklab(0.588066 0.00220281 -0.0119324);
 }
 
 @layer base {

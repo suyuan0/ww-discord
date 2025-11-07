@@ -54,7 +54,7 @@ export default function SidebarUser() {
 
   return (
     // <section className="dark:bg-discord-background border-discord-border absolute start-2 bottom-2 w-[calc(100%-var(--spacing)*4)] rounded-md border bg-[#FBFBFB]">
-    <section className="bg-discord-background border-discord-border absolute start-2 bottom-2 w-[calc(100%-var(--spacing)*4)] rounded-lg border">
+    <section className="bg-discord-background border-discord-border absolute start-2 bottom-2 z-20 w-[calc(100%-var(--spacing)*4)] rounded-lg border">
       <div
         className={clsx(
           "-ms-px grid h-14 grid-cols-[1fr_auto] space-x-2 overflow-hidden p-3",
