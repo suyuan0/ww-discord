@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import SidebarNav from "./Nav";
 import SidebarUser from "./User";
-import MeProfile from "./MeProfile";
+import SidebarList from "./SidebarList";
 import { useGlobalStore } from "@/store/global";
 
 export default function Sidebar() {
@@ -63,9 +63,9 @@ export default function Sidebar() {
     >
       <SidebarNav />
       <SidebarUser />
-      <MeProfile />
+      <SidebarList />
       <div
-        className="bg-border w-px cursor-ew-resize duration-200 hover:w-1"
+        className="bg-border absolute right-0 z-10 h-full w-px cursor-ew-resize duration-200 hover:w-1"
         onMouseDown={handleMouseDown}
       ></div>
     </aside>

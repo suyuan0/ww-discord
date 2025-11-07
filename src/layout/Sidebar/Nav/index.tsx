@@ -24,11 +24,11 @@ export default function SidebarNav() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                to="/@me"
+                to="/channels/@me"
                 className={clsx(
                   "peer order-2 flex h-10 w-10 items-center justify-center rounded-xl duration-150",
-                  chatActive === "me" ? "bg-[#5965F2]" : "bg-[#121213]",
-                  { "hover:bg-[#5965F2]": chatActive !== "me" },
+                  chatActive === "me" ? "bg-discord-primary" : "bg-[#121213]",
+                  { "hover:bg-discord-primary": chatActive !== "me" },
                 )}
               >
                 <Icon
@@ -81,7 +81,7 @@ export default function SidebarNav() {
         {/* 添加服务器 */}
         <li className="pl-4">
           <Tooltip>
-            <TooltipTrigger className="flex size-10 items-center justify-center rounded-xl bg-[rgba(151,151,159,0.12)] duration-200 hover:bg-[#5965F2]">
+            <TooltipTrigger className="hover:bg-discord-primary bg-discord-color-1 flex size-10 items-center justify-center rounded-xl duration-200">
               <Icon iconNode={DiscordPlusIcon} stroke="none" size={20}></Icon>
             </TooltipTrigger>
             <TooltipContent side="right">
@@ -92,7 +92,7 @@ export default function SidebarNav() {
         {/* 发现 */}
         <li className="pl-4">
           <Tooltip>
-            <TooltipTrigger className="flex size-10 items-center justify-center rounded-xl bg-[rgba(151,151,159,0.12)] duration-200 hover:bg-[#5965f2]">
+            <TooltipTrigger className="hover:bg-discord-primary bg-discord-color-1 flex size-10 items-center justify-center rounded-xl duration-200">
               <Icon
                 iconNode={DiscordCompassIcon}
                 size={20}
@@ -108,7 +108,7 @@ export default function SidebarNav() {
         {/* 下载 */}
         <li className="pl-4">
           <Tooltip>
-            <TooltipTrigger className="flex size-10 items-center justify-center rounded-xl bg-[rgba(151,151,159,0.12)] duration-200 hover:bg-[#5965f2]">
+            <TooltipTrigger className="hover:bg-discord-primary bg-discord-color-1 flex size-10 items-center justify-center rounded-xl duration-200">
               <Icon
                 iconNode={DiscordDownloadIcon}
                 size={20}

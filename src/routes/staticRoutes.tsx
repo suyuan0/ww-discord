@@ -7,8 +7,25 @@ export default [
     Component: Layout,
     children: [
       {
-        path: "/@me",
-        element: <div>me</div>,
+        path: "/channels/@me",
+        children: [
+          {
+            index: true,
+            element: <div>@me</div>,
+          },
+        ],
+      },
+      {
+        path: "/store",
+        element: <div>store</div>,
+      },
+      {
+        path: "/shop",
+        element: <div>shop</div>,
+      },
+      {
+        path: "/quest-home",
+        element: <div>quest-home</div>,
       },
     ],
   },
