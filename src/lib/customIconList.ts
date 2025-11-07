@@ -86,3 +86,48 @@ export const DiscordIcon: IconNode = [
     },
   ],
 ];
+
+// Discord Plus
+export const DiscordPlusIcon: IconNode = [
+  [
+    "circle",
+    { cx: "12", cy: "12", r: "10", key: "2d38590f", fill: "transparent" },
+  ],
+  [
+    "path",
+    {
+      d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z",
+      key: "9d9f9d39",
+      fill: "currentColor",
+    },
+  ],
+];
+
+// Discord Compass
+export const DiscordCompassIcon: IconNode = [
+  [
+    "path",
+    {
+      d: "M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z",
+      key: "e4ef3548",
+    },
+  ],
+  [
+    "path",
+    {
+      d: "M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0ZM7.74 9.3A2 2 0 0 1 9.3 7.75l7.22-1.45a1 1 0 0 1 1.18 1.18l-1.45 7.22a2 2 0 0 1-1.57 1.57l-7.22 1.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z",
+      key: "afd269c8",
+      fillRule: "evenodd",
+    },
+  ],
+];
+
+export const DiscordDownloadIcon: IconNode = [
+  [
+    "path",
+    {
+      d: "M12 2a1 1 0 0 1 1 1v10.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V3a1 1 0 0 1 1-1ZM3 20a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3Z",
+      key: "ebf91a1a",
+    },
+  ],
+];

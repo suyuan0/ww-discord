@@ -2,7 +2,12 @@ import { useState } from "react";
 import { Icon } from "lucide-react";
 import { Link } from "react-router";
 import { clsx } from "clsx";
-import { DiscordIcon } from "@/lib/customIconList";
+import {
+  DiscordIcon,
+  DiscordPlusIcon,
+  DiscordCompassIcon,
+  DiscordDownloadIcon,
+} from "@/lib/customIconList";
 import {
   Tooltip,
   TooltipTrigger,
@@ -20,13 +25,19 @@ export default function SidebarNav() {
             <TooltipTrigger asChild>
               <Link
                 to="/@me"
-                className="peer order-2 flex h-10 w-10 items-center justify-center rounded-xl bg-[#5965F2]"
+                className={clsx(
+                  "peer order-2 flex h-10 w-10 items-center justify-center rounded-xl duration-150",
+                  chatActive === "me" ? "bg-[#5965F2]" : "bg-[#121213]",
+                  { "hover:bg-[#5965F2]": chatActive !== "me" },
+                )}
               >
                 <Icon
                   size={24}
                   iconNode={DiscordIcon}
                   stroke="none"
-                  fill="currentColor"
+                  className={clsx(
+                    chatActive === "me" ? "fill-current" : "fill-[#DBDCDF]",
+                  )}
                 />
               </Link>
             </TooltipTrigger>
@@ -66,6 +77,49 @@ export default function SidebarNav() {
               })}
             ></span>
           </div>
+        </li>
+        {/* 添加服务器 */}
+        <li className="pl-4">
+          <Tooltip>
+            <TooltipTrigger className="flex size-10 items-center justify-center rounded-xl bg-[rgba(151,151,159,0.12)] duration-200 hover:bg-[#5965F2]">
+              <Icon iconNode={DiscordPlusIcon} stroke="none" size={20}></Icon>
+            </TooltipTrigger>
+            <TooltipContent side="right">
+              <p className="text-lg font-medium">添加服务器</p>
+            </TooltipContent>
+          </Tooltip>
+        </li>
+        {/* 发现 */}
+        <li className="pl-4">
+          <Tooltip>
+            <TooltipTrigger className="flex size-10 items-center justify-center rounded-xl bg-[rgba(151,151,159,0.12)] duration-200 hover:bg-[#5965f2]">
+              <Icon
+                iconNode={DiscordCompassIcon}
+                size={20}
+                stroke="none"
+                fill="currentColor"
+              />
+            </TooltipTrigger>
+            <TooltipContent side="right">
+              <p className="text-lg font-medium">发现</p>
+            </TooltipContent>
+          </Tooltip>
+        </li>
+        {/* 下载 */}
+        <li className="pl-4">
+          <Tooltip>
+            <TooltipTrigger className="flex size-10 items-center justify-center rounded-xl bg-[rgba(151,151,159,0.12)] duration-200 hover:bg-[#5965f2]">
+              <Icon
+                iconNode={DiscordDownloadIcon}
+                size={20}
+                stroke="none"
+                fill="currentColor"
+              />
+            </TooltipTrigger>
+            <TooltipContent side="right">
+              <p className="text-lg font-medium">下载APP</p>
+            </TooltipContent>
+          </Tooltip>
         </li>
       </ul>
     </nav>
